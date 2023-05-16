@@ -11,7 +11,7 @@ export default {
           content: "Postar aqui não é legal",
         },
         {
-          title: "Meu primeiro post",
+          title: "Meu segundo post",
           datetime: Date.now(),
           content: "Postar aqui não é legal",
         },
@@ -20,9 +20,25 @@ export default {
         title: "",
         content: "",
       },
+      search: "",
     };
   },
+  computed: {
+    filteredPosts() {
+      // se search estiver vazia, retorne a lista completa de posts
+      if (!this.search) return this.posts;
 
+      //se tiver qualquer coisa em search, faz o filtro
+      const listaFiltrada = [];
+
+      for (const post of this.posts) {
+        if (post.title.includes(this.search)) {
+          listaFiltrada.push(post);
+        }
+      }
+      return listaFiltrada;
+    },
+  },
   methods: {
     handleClick(event) {
       const now = new Date();
@@ -51,8 +67,10 @@ export default {
 </script>
 
 <template>
+  <input v-model="search" placeholder="Procure pelo título do post..." />
+
   <div id="lista-posts">
-    <div class="post" v-for="post in posts" :key="post.key">
+    <div class="post" v-for="post in filteredPosts" :key="post.key">
       <h3>{{ post.title }}</h3>
       <h4>{{ post.datetime }}</h4>
       <p>{{ post.content }}</p>
@@ -81,115 +99,12 @@ export default {
 </template>
 
 <style scoped>
-div#lista-posts {
-  background-color: rgb(0, 0, 0);
-  padding: 1rem;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  text-align: center;
-  color: #fff;
-  letter-spacing: 0.1em;
-  line-height: 1.5ch;
-  border-radius: 1em 1em 0 0 ;
-}
-
-form {
-  background-color: rgb(0, 0, 0);
-  border-radius: 0 0 1em 1em ;
-}
-
-input {
-  height: 1rem;
-  border-radius: 1em;
-  color: rgb(0, 0, 0);
-  font-size: x-large;
-  font-weight: bold;
-  height: 30px;
-  padding-left: 15px;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-}
-
-textarea {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  height: 15rem;
-  border-radius: 1em;
-  color: rgb(0, 0, 0);
-  font-size: x-large;
-  padding-left: 15px;
-}
-
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 form > * {
   margin: 1rem;
 }
-
-
-
-
-
-.glow-on-hover {
-  width: 220px;
-  height: 50px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #ffffff;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-}
-
-.glow-on-hover:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff0000,
-    #ff0000,
-    #ff0000,
-    #ff0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
-
-.glow-on-hover:active {
-  color: #000;
-}
-
-.glow-on-hover:active:after {
-  background: transparent;
-}
-
-.glow-on-hover:hover:before {
-  opacity: 1;
-}
-
-.glow-on-hover:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-
 </style>
