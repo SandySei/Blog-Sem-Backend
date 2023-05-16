@@ -84,33 +84,52 @@ export default {
 div#lista-posts {
   background-color: rgb(0, 0, 0);
   padding: 1rem;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   text-align: center;
+  color: #fff;
+  letter-spacing: 0.1em;
+  line-height: 1.5ch;
+  border-radius: 1em 1em 0 0 ;
 }
 
 form {
   background-color: rgb(0, 0, 0);
+  border-radius: 0 0 1em 1em ;
 }
 
 input {
   height: 1rem;
-  border-radius: 9999em;
-  color: white;
-  font-size: xx-large;
+  border-radius: 1em;
+  color: rgb(0, 0, 0);
+  font-size: x-large;
+  font-weight: bold;
   height: 30px;
-  padding-left: 10px;
-  font-family: "Times New Roman", Times, serif;
+  padding-left: 15px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
+textarea {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  height: 15rem;
+  border-radius: 1em;
+  color: rgb(0, 0, 0);
+  font-size: x-large;
+  padding-left: 15px;
+}
 
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 form > * {
   margin: 1rem;
 }
+
+
+
+
 
 .glow-on-hover {
   width: 220px;
@@ -118,7 +137,7 @@ form > * {
   border: none;
   outline: none;
   color: #fff;
-  background: #111;
+  background: #ffffff;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -130,13 +149,9 @@ form > * {
   background: linear-gradient(
     45deg,
     #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
+    #ff0000,
+    #ff0000,
+    #ff0000,
     #ff0000
   );
   position: absolute;
@@ -177,9 +192,4 @@ form > * {
   border-radius: 10px;
 }
 
-div#lista-posts {
-  color: #fff;
-  letter-spacing: 0.1em;
-  line-height: 1.5ch;
-}
 </style>
