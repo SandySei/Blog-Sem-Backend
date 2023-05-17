@@ -62,3 +62,7 @@ export default {
     <button type="button" @click="handleClick">Salvar</button>
   </form>
 </template>
+
+<script>
+
+</script>

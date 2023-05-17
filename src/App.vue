@@ -10,17 +10,21 @@ export default {
   },
   methods: {
     addPost(newPost) {
-      this.posts.push(newPost)
+      this.posts.push(newPost);
     },
   },
 };
 </script>
 
 <template>
-  <RouterLink to="/">Home</RouterLink>
-  <RouterLink to="/create">Novo Post</RouterLink>
+  <header>
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/create">Novo Post</RouterLink>
 
-  <RouterView :posts="posts" @create-post="addPost" />
+      <RouterView :posts="posts" @create-post="addPost" />
+    </nav>
+  </header>
 </template>
 
 <style scoped></style>
