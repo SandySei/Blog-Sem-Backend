@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "PlayfairDisplay"; 
+    src: url(/src/fonts/PlayfairDisplay.ttf);
+}
+
+body {
+    font-family: "PlayfairDisplay";
+}
