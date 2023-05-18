@@ -43,8 +43,3 @@ export default {
   </div>
 </template>
 
-<script setup>
-
-
-
-</script>
