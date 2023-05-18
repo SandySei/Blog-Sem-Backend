@@ -1,23 +1,13 @@
 @font-face {
-  font-family: "coolvetica";
-  src: url(./fonts/coolvetica.ttf);
-}
-
-@font-face {
   font-family: "coolvetica condensed";
   src: url(./fonts/coolvetica\ condensed.ttf);
 }
 
 body {
-  font-family: "coolvetica";
+  font-family: "coolvetica condensed";
   font-weight: lighter;
 }
 
-input {
-  font-family: "coolvetica condensed";
-  width: 50%;
-  height: 30px;
-}
 
 .search {
   border: none;
@@ -35,12 +25,6 @@ input {
   box-shadow: inset 1.5px 1px 1px 1px rgb(73, 155, 228);
 }
 
-textarea {
-  width: 90%;
-  height: 130px;
-  resize: none;
-  font-family: "coolvetica condensed";
-}
 
 div.post {
   padding: 3px;
@@ -52,18 +36,6 @@ div.post {
   border-radius: 0.5em;
 }
 
-form {
-  background: linear-gradient(
-    280deg,
-    rgba(5, 237, 254, 1) 0%,
-    rgba(78, 172, 254, 1) 100%
-  );
-  display: block;
-  flex-direction: column;
-  padding: 10px;
-  margin: 1rem;
-  border-radius: 0.5em;
-}
 
 form > * {
   margin: 1rem;
