@@ -1,12 +1,39 @@
+@import "button.css";
+@import "posts.css";
+
 @font-face {
-  font-family: "coolvetica condensed";
-  src: url(./fonts/coolvetica\ condensed.ttf);
+  font-family: "PlayfairDisplay-Regular";
+  src: url(./fonts/PlayfairDisplay-Regular.ttf);
 }
 
-body {
-  font-family: "coolvetica condensed";
-  font-weight: lighter;
+@font-face {
+  font-family: "PlayfairDisplay-Black";
+  src: url(./fonts/PlayfairDisplay-Black.ttf);
 }
+
+
+
+div.post {
+  align-items: center;
+  padding: 1px;
+  margin: 1.5rem;
+  width: 75%;
+  height: 100%;
+  border: solid 1px rgba(53, 53, 53, 0.034);
+  box-shadow: -3px 2px 3px rgba(78, 172, 254, 0.534);
+  border-radius: 0.5em;
+  background-image: url(../imagens/fundo-de-papel-de-espaco-de-design-texturizado.jpg);
+  background-size: cover;
+
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+div.post:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
 
 
 .search {
@@ -25,17 +52,73 @@ body {
   box-shadow: inset 1.5px 1px 1px 1px rgb(73, 155, 228);
 }
 
-
-div.post {
-  padding: 3px;
-  margin: 1rem;
-  width: 75%;
+form {
   height: 100%;
-  border: solid 1px rgba(53, 53, 53, 0.034);
-  box-shadow: -3px 2px 3px rgba(78, 172, 254, 0.534);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(
+    280deg,
+    rgba(5, 237, 254, 1) 0%,
+    #4eacfe 100%
+  );
   border-radius: 0.5em;
+  margin: 1rem;
+  padding: 8px;
 }
 
+input {
+  width: 90%;
+  height: 30px;
+}
+
+textarea {
+  width: 90%;
+  height: 130px;
+  resize: none;
+}
+.search {
+  border: none;
+  outline: none;
+  color: #00000094;
+  background: #f0f0f0;
+  font-size: 0.9em;
+  padding-left: 10px;
+  border-radius: 0.5em;
+  letter-spacing: 2px;
+}
+
+.search:focus {
+  border-radius: 0.5em;
+  box-shadow: inset 1.5px 1px 1px 1px rgb(73, 155, 228);
+}
+
+button {
+  font-weight: 50;
+  font-size: 17px;
+  text-align: center;
+  color: #797979;
+  cursor: pointer;
+  max-width: 100px;
+  width: 100%;
+  outline: 2px solid;
+  border: none;
+  border-radius: 0.5em;
+  outline-color: rgba(78, 172, 254, 1);
+  outline-offset: 0px;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+button:hover {
+  color: rgba(78, 172, 254, 1);
+  outline-color: rgba(71, 126, 232, 0);
+  outline-offset: 30px;
+}
+
+button:focus {
+  box-shadow: inset 1.5px 1px 1px 1px rgb(73, 155, 228);
+}
 
 form > * {
   margin: 1rem;
