@@ -5,13 +5,20 @@ import { RouterLink, RouterView } from "vue-router";
 export default {
   data() {
     return {
-      posts: [],
+      posts: [
+        {
+          title: "Meu primeiro post",
+          datetime: "18/5/2023",
+          content: "Conteúdo magnifico",
+        },
+      ],
     };
   },
   methods: {
     addPost(newPost) {
       this.posts.push(newPost);
     },
+    updatePost() {},
   },
 };
 </script>
@@ -21,12 +28,9 @@ export default {
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/create">Novo Post</RouterLink>
-
-      <RouterView :posts="posts" @create-post="addPost" />
     </nav>
   </header>
+  <main>
+    <RouterView :posts="posts" @create-post="addPost" @edit-post="updatePost" />
+  </main>
 </template>
-
-<style scoped>
-
-</style>
