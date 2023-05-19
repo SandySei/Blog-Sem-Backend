@@ -19,19 +19,16 @@ div.post {
   margin: 1.5rem;
   width: 75%;
   height: 100%;
-  border: solid 1px rgba(53, 53, 53, 0.034);
-  box-shadow: -3px 2px 3px rgba(78, 172, 254, 0.534);
-  border-radius: 0.5em;
-  background-image: url(../imagens/fundo-de-papel-de-espaco-de-design-texturizado.jpg);
-  background-size: cover;
+  border: solid 1px rgba(185, 185, 185, 0.034);
 
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  border-radius: 0.5em;
+  background-color: #a4c0da70;
+
 }
 
 div.post:hover {
-  -webkit-transform: scale(1.02);
-  transform: scale(1.02);
+  border-radius: 0.5em;
+  box-shadow: inset 1.5px 1px 1px 1px #499be4;
 }
 
 
@@ -49,7 +46,7 @@ div.post:hover {
 
 .search:focus {
   border-radius: 0.5em;
-  box-shadow: inset 1.5px 1px 1px 1px rgb(73, 155, 228);
+  box-shadow: inset 1.5px 1px 1px 1px #499be4;
 }
 
 form {

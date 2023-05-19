@@ -18,7 +18,9 @@ export default {
     addPost(newPost) {
       this.posts.push(newPost);
     },
-    updatePost() {},
+    updatePost(updatePost, id) {
+      this.posts[id] = updatePost;
+    },
   },
 };
 </script>
