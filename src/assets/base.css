@@ -11,6 +11,11 @@
   src: url(./fonts/PlayfairDisplay-Black.ttf);
 }
 
+body {
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
 div.post {
   align-items: center;
   padding: 1px;
