@@ -16,7 +16,12 @@ export default {
   methods: {
     handleClick(event) {
       if (!this.formData.title) {
-        alert("Preencha o Título do post ! \u2368");
+        alert("Preencha o Título do post !");
+        return;
+      }
+
+      if (!this.formData.content) {
+        alert("Preencha o Conteúdo do post !");
         return;
       }
 
@@ -24,12 +29,16 @@ export default {
 
       const dataDaPostagem = ` \ud83d\udcc6 ${now.getDate()}/${
         now.getMonth() + 1
-      }/${now.getFullYear()} - \ud83d\udd52 ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+      }/${now.getFullYear()}`;
+
+
+      const horarioDaPostagem = ` \ud83d\udd52 ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
 
       const postData = {
         title: this.formData.title,
         content: this.formData.content,
         datetime: dataDaPostagem,
+        hora: horarioDaPostagem,
       };
 
       if (this.isEditing) {
