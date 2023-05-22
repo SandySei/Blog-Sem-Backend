@@ -22,9 +22,9 @@ export default {
 
       const now = new Date();
 
-      const dataDaPostagem = `${now.getDate()}/${
+      const dataDaPostagem = ` \ud83d\udcc6 ${now.getDate()}/${
         now.getMonth() + 1
-      }/${now.getFullYear()} - ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+      }/${now.getFullYear()} - \ud83d\udd52 ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
 
       const postData = {
         title: this.formData.title,
