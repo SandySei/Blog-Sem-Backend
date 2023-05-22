@@ -46,7 +46,7 @@ export default {
     },
     deletePost() {
       const id = this.getPostId(this.selectedPost.title);
-      this.$emit ("delete-post", id);
+      this.$emit("delete-post", id);
 
       this.setupModal();
     },
@@ -63,21 +63,32 @@ export default {
 
   <div id="lista-posts">
     <div class="post" v-for="(post, index) in filteredPosts" :key="post.key">
-      <h3>
-        {{ post.title
-        }}<RouterLink :to="`/edit/${getPostId(post.title)}`"
-          ><span class="material-symbols-outlined" h>
+      <div class="flex">
+        <RouterLink :to="`/detail/${getPostId(post.title)}`">
+          <h3>
+            {{ post.title }}
+          </h3>
+        </RouterLink>
+        <RouterLink :to="`/edit/${getPostId(post.title)}`">
+          <span class="material-symbols-outlined" h>
             edit_note
           </span></RouterLink
-        ><span
+        >
+        <span
           class="material-symbols-outlined"
           @click="setupModal(getPostId(post.title))"
         >
           delete
         </span>
-      </h3>
+      </div>
+
+    
       <p>{{ post.content }}</p>
+    
       <h4>{{ post.datetime }}</h4>
+
+      <h5>{{ post.hora }}</h5>
+    
     </div>
   </div>
   <div class="modal" v-show="showModal">
