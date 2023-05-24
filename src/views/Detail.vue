@@ -44,7 +44,7 @@ textarea {
   border: none;
   width: 90%;
   height: 75vh;
- 
+
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: justify;
@@ -57,7 +57,6 @@ h4 {
 }
 
 h4 {
-
   color: #000000;
   text-decoration: none;
   text-align: end;
@@ -74,4 +73,5 @@ h2 {
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
+
 </style>

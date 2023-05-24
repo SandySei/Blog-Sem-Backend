@@ -41,6 +41,7 @@
 }
 
 button {
+  
   font-family: "PlayfairDisplay-Regular";
   letter-spacing: 1.5px;
   margin: 10px;
@@ -134,6 +135,6 @@ button.save {
   text-transform: uppercase;
   font-family: "PlayfairDisplay-Regular";
 
-  width: 50%; 
+  width: 50%;
 }
 
