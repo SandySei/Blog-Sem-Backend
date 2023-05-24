@@ -14,3 +14,8 @@
   src: url(./fonts/PlayfairDisplay-Black.ttf);
 }
 
+body {
+  background-image: url(/src/imagens/FundoJornal.png);
+  background-repeat: no-repeat;
+  background-size: 600px
+}
