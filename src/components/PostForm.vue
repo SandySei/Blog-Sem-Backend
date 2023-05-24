@@ -29,16 +29,12 @@ export default {
 
       const dataDaPostagem = ` \ud83d\udcc6 ${now.getDate()}/${
         now.getMonth() + 1
-      }/${now.getFullYear()}`;
-
-
-      const horarioDaPostagem = ` \ud83d\udd52 ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+      }/${now.getFullYear()}   \ud83d\udd52 ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
 
       const postData = {
         title: this.formData.title,
         content: this.formData.content,
         datetime: dataDaPostagem,
-        hora: horarioDaPostagem,
       };
 
       if (this.isEditing) {
@@ -59,21 +55,21 @@ export default {
 </script>
 
 <template>
-  <form>
+  <form class="PostForm">
     <input
-      class="search"
+      class="text"
       v-model="formData.title"
       placeholder="Escreva seu Título aqui ..."
     />
     <textarea
       v-model="formData.content"
       placeholder="Escreva seu Post aqui ..."
-      class="search"
+      class="text"
       cols="30"
       rows="10"
     >
     </textarea>
 
-    <button type="button" @click="handleClick">SALVAR</button>
+    <button class="save" type="button" @click="handleClick">SALVAR</button>
   </form>
 </template>

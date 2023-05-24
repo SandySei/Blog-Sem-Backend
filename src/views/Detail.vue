@@ -16,20 +16,62 @@ export default {
 </script>
 
 <template>
-     <h2>{{ post.title }}</h2>
+  <h2>{{ post.title }}</h2>
 
-     <textarea :value="post.content"></textarea>
+  <textarea readonly :value="post.content"></textarea>
 
-     <h4>{{ post.datetime }}</h4>
-     <h5> {{ post.hora }}</h5>
+  <h4>{{ post.datetime }}</h4>
 </template>
-
 
 <style scoped>
 textarea {
-    resize: none;
-    outline: none;
-    border: none;
-    width: 80%;
+  height: 100%;
+  width: 95%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #2b2b2b;
+  border-radius: 0.3em;
+  margin: 1rem;
+  padding: 15px;
+
+  font-family: "PlayfairDisplay-Regular";
+  color: #ffffff;
+  resize: none;
+  outline: none;
+  border: none;
+  width: 90%;
+  height: 75vh;
+ 
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  text-indent: 20px;
+}
+
+h2,
+h4 {
+  font-family: "PlayfairDisplay-Regular";
+}
+
+h4 {
+
+  color: #000000;
+  text-decoration: none;
+  text-align: end;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+h2 {
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 </style>

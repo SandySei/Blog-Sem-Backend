@@ -1,5 +1,7 @@
 @import "modal.css";
 @import "header.css";
+@import "postform.css";
+@import "home.css";
 
 @font-face {
   font-family: "PlayfairDisplay-Regular";
@@ -11,103 +13,3 @@
   src: url(./fonts/PlayfairDisplay-Black.ttf);
 }
 
-body {
-  font-weight: 300;
-  letter-spacing: 0.5px;
-}
-
-div.post {
-  align-items: center;
-  padding: 1px;
-  margin: 1.5rem;
-  width: 75%;
-  height: 100%;
-  border: solid 1px rgba(185, 185, 185, 0.034);
-
-  border-radius: 0.5em;
-  background-color: #a4c0da70;
-}
-
-div.post:hover {
-  border-radius: 0.5em;
-  box-shadow: inset 1.5px 1px 1px 1px #499be4;
-}
-
-.search {
-  border: none;
-  outline: none;
-  color: #00000094;
-  background: #f0f0f0;
-  font-size: 0.9em;
-  padding-left: 10px;
-  border-radius: 0.5em;
-  letter-spacing: 2px;
-}
-
-.search:focus {
-  border-radius: 0.5em;
-  box-shadow: inset 1.5px 1px 1px 1px #499be4;
-}
-
-form {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: linear-gradient(280deg, rgba(5, 237, 254, 1) 0%, #4eacfe 100%);
-  border-radius: 0.5em;
-  margin: 1rem;
-  padding: 8px;
-}
-
-input {
-  width: 90%;
-  height: 30px;
-}
-
-textarea {
-  width: 90%;
-  height: 130px;
-  resize: none;
-}
-.search {
-  border: none;
-  outline: none;
-  color: #00000094;
-  background: #f0f0f0;
-  font-size: 0.9em;
-  padding-left: 10px;
-  border-radius: 0.5em;
-  letter-spacing: 2px;
-}
-
-.search:focus {
-  border-radius: 0.5em;
-  box-shadow: inset 1.5px 1px 1px 1px rgb(73, 155, 228);
-}
-
-form > * {
-  margin: 1rem;
-}
-
-
-
-/* Botão do lado do Post para editar */
-
-span {
-  color: #0018b3;
-}
-
-.bg-error {
-  background-color: red;
-}
-
-.bg-success {
-  background-color: green;
-}
-
-h3 {
-  display: flex;
-  justify-content: space-between;
-}

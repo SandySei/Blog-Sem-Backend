@@ -8,7 +8,7 @@ export default {
       posts: [
         {
           title: "Meu primeiro post",
-          datetime: "18/5/2023",
+          datetime: "\ud83d\udcc6 18/5/2023 \ud83d\udd52 10:30:17",
           content: "Conteúdo magnifico",
         },
       ],
@@ -55,9 +55,11 @@ export default {
 </template>
 
 <style scoped>
-
-
 main {
-  padding-top: 100px;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>
