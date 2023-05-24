@@ -56,7 +56,7 @@ export default {
 
 <template>
   <input
-    class="search"
+    class="text"
     v-model="search"
     placeholder="Procure pelo título do post..."
   />
@@ -69,26 +69,31 @@ export default {
             {{ post.title }}
           </h3>
         </RouterLink>
-        <RouterLink :to="`/edit/${getPostId(post.title)}`">
-          <span class="material-symbols-outlined" h>
-            edit_note
-          </span></RouterLink
-        >
-        <span
-          class="material-symbols-outlined"
-          @click="setupModal(getPostId(post.title))"
-        >
-          delete
-        </span>
+
+        <section class="icons">
+          <RouterLink :to="`/detail/${getPostId(post.title)}`"
+            ><span class="material-symbols-outlined">
+              visibility
+            </span></RouterLink
+          >
+
+          <RouterLink :to="`/edit/${getPostId(post.title)}`">
+            <span class="material-symbols-outlined" h>
+              edit_note
+            </span></RouterLink
+          >
+          <span
+            class="material-symbols-outlined"
+            @click="setupModal(getPostId(post.title))"
+          >
+            delete
+          </span>
+        </section>
       </div>
 
-    
       <p>{{ post.content }}</p>
-    
-      <h4>{{ post.datetime }}</h4>
 
-      <h5>{{ post.hora }}</h5>
-    
+      <h4>{{ post.datetime }} <br /><br /></h4>
     </div>
   </div>
   <div class="modal" v-show="showModal">
@@ -105,7 +110,13 @@ export default {
 </template>
 
 <style scoped>
-span {
-  cursor: pointer;
+h4 {
+  margin-right: 15px;
+
+  color: #000000;
+  text-decoration: none;
+  text-align: end;
+  font-size: 14px;
+  font-weight: 300;
 }
 </style>

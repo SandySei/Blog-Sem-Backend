@@ -1,44 +1,61 @@
 header {
-    background-color: #000000;
-  
-    position: absolute;
-    width: 100vw;
-  
-    top: 0;
-    left: 0;
-  }
-  a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-  
-    width: 50%;
-    height: 40px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    -webkit-transition: all 0.1s ease;
-    transition: all 0.1s ease;
-  }
-  
-  a:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    font-weight: 500;
-    letter-spacing: 1px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
+  background-color: #202020;
+
+  position: absolute;
+  width: 100vw;
+
+  top: 0;
+  left: 0;
+}
+nav > a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  width: 50%;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+nav > a:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+nav > a:before,
+a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background: #fff;
+}
+
+nav > a:hover:before {
+  background: #fff;
+  width: 40%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
