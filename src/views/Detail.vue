@@ -28,16 +28,12 @@ textarea {
   height: 100%;
   width: 95%;
   max-width: 1200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   background: #2b2b2b;
   border-radius: 0.3em;
   margin: 1rem;
   padding: 15px;
 
-  font-family: "PlayfairDisplay-Regular";
+  font-family: 'Times New Roman', Times, serif;
   color: #ffffff;
   resize: none;
   outline: none;
@@ -53,7 +49,7 @@ textarea {
 
 h2,
 h4 {
-  font-family: "PlayfairDisplay-Regular";
+  font-family: 'Times New Roman', Times, serif;
 }
 
 h4 {

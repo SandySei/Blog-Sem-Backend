@@ -31,18 +31,18 @@
   font-weight: 400;
   font-size: large;
   letter-spacing: 2px;
-  font-family: "PlayfairDisplay-Regular";
+  font-family: 'Times New Roman', Times, serif;
 }
 .modal-content > p {
   color: #ffffff;
   font-weight: 300;
   letter-spacing: 1px;
-  font-family: "PlayfairDisplay-Regular";
+  font-family: 'Times New Roman', Times, serif;
 }
 
 button {
   
-  font-family: "PlayfairDisplay-Regular";
+  font-family: 'Times New Roman', Times, serif;
   letter-spacing: 1.5px;
   margin: 10px;
   width: 200px;
@@ -133,7 +133,7 @@ button.save {
   font-size: large;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-family: "PlayfairDisplay-Regular";
+  font-family: 'Times New Roman', Times, serif;
 
   width: 50%;
 }

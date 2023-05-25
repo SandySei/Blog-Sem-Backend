@@ -12,7 +12,7 @@ textarea {
   justify-content: center;
   align-items: center;
 
-  font-family: "PlayfairDisplay-Regular";
+  font-family: 'Times New Roman', Times, serif;
   color: black;
 }
 
@@ -27,7 +27,7 @@ textarea {
 
 textarea,
 input::placeholder {
-  font-family: "PlayfairDisplay-Regular";
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 300;
   letter-spacing: 0.9px;
 }
@@ -42,7 +42,7 @@ input::placeholder {
 }
 .text:focus {
   border-radius: 0.3em;
-  box-shadow: inset 1.5px 1px 1px 1px hsla(0, 0%, 0%, 0.5);
+  box-shadow: inset 1.5px 1px 1px 1px #7c7c7c67;
 }
 
 form.PostForm {
@@ -53,7 +53,7 @@ form.PostForm {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #2b2b2b;
+  background: #dfdfdf;
   border-radius: 0.3em;
   margin: 1rem;
   padding: 8px;
