@@ -25,16 +25,16 @@ export default {
 
 <style scoped>
 textarea {
-  height: 100%;
+  height: 100%; 
   width: 95%;
   max-width: 1200px;
-  background: #2b2b2b;
+  background: #f0f0f0ea;
   border-radius: 0.3em;
   margin: 1rem;
   padding: 15px;
 
   font-family: 'Times New Roman', Times, serif;
-  color: #ffffff;
+  color: #000000;
   resize: none;
   outline: none;
   border: none;
@@ -45,6 +45,7 @@ textarea {
   letter-spacing: 0.5px;
   text-align: justify;
   text-indent: 20px;
+  font-size: 20px;
 }
 
 h2,
@@ -61,13 +62,11 @@ h4 {
 }
 
 h2 {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: #000000;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 0.5px;
   text-transform: uppercase;
+  font-size: 35px;
 }
 
 </style>

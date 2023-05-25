@@ -59,6 +59,7 @@ a:after {
 
 nav > a:hover:before {
   background: #ffffff;
+  box-shadow: 1px 2px 1px black;
   width: 40%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }

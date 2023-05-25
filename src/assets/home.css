@@ -12,7 +12,7 @@ div.post {
 
 div.post:hover {
   border-radius: 0.3em;
-  box-shadow: inset 1.5px 1px 1px 1px hsla(0, 0%, 0%, 0.5);
+  box-shadow: inset 1.5px 1px 1px 1px #dfdfdf;
 }
 
 a,
@@ -20,7 +20,7 @@ span {
   text-decoration: none;
 
   cursor: pointer;
-  color: black;
+  color: #777777;
 }
 
 .flex {
