@@ -1,5 +1,7 @@
 ## Blog em Vue.js - Sem Backend
 
+SOMENTE WEB
+
 Este repositório contém um blog simples desenvolvido em ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D), projetado para permitir a adição, edição, visualização de detalhes e exclusão de artigos, tudo sem um backend. O objetivo deste projeto é demonstrar como criar um blog funcional usando somente o Vue e armazenando os dados localmente no navegador.
 
 ### Funcionalidades:
